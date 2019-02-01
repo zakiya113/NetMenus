@@ -1,7 +1,6 @@
 package qa.pages;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -16,6 +15,8 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]")
 	WebElement couponcode;
 	
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]")
+	WebElement addrecord;
 	
 	//Initializing the Page Objects
 		public HomePage() {
@@ -32,20 +33,12 @@ public class HomePage extends TestBase {
 	return new CouponsPage();
 	}
 	
+	/*public RestaurantPage clickOnAddRecord() throws InterruptedException{
+		Thread.sleep(3000);
+		addrecord.click();
 	
-	
-	/*public void clickOnNewCoupon(){
-		Actions action = new Actions(driver);
-			action.moveToElement(couponcode).build().perform();
-			couponcode.click();
 	}*/
 
-	public CouponsPage clickOnCouponCode1() {
-		
-		Actions action = new Actions(driver);
-		action.moveToElement(couponcode).build().perform();
-		couponcode.click();
-		return null;
-	}
+	
 	
 }

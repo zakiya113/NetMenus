@@ -13,7 +13,7 @@ public class TestUtil {
 
 	public static long PAGE_LOAD_TIMEOUT = 20;
 	public static long IMPLICIT_WAIT = 10;
-	public static String TESTDATA_SHEET_PATH="D:\\practiceworkspace\\Food_Ordering_Demo\\src\\main\\java\\TestData\\Coupon.xlsx";
+	public static String TESTDATA_SHEET_PATH="C:\\Users\\minds9\\git\\NetMenus\\NetMenus\\src\\main\\java\\qa\\TestData\\AddRecord.xlsx";
     static Workbook book;
     static Sheet sheet;
     static WorkbookFactory WorkFactory;

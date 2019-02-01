@@ -31,7 +31,7 @@ public class HomePageTest extends TestBase {
 	public void setUp() throws InterruptedException {
 				initialization();
 				testUtil = new TestUtil();
-		restaurantPage = new RestaurantPage();
+		//restaurantPage = new RestaurantPage();
 			loginPage = new LoginPage();
 			homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
@@ -46,8 +46,8 @@ public class HomePageTest extends TestBase {
 		
 		@Test(priority=2)
 		public void clickOnCouponCode1(){
-			couponsPage = homePage.clickOnCouponCode1();
-		
+			couponsPage = homePage.clickOnCouponCode();
+			//couponsPage.clickOnAddRecord(cCode, cDesc, stDate, etDate, cDis, cTAmnt, cNoImp); 
 		
 	}
 		

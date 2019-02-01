@@ -1,37 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57922" started-at="2019-01-31T06:46:47Z" finished-at="2019-01-31T06:47:45Z">
+  <suite name="Default suite" duration-ms="57480" started-at="2019-02-01T11:21:30Z" finished-at="2019-02-01T11:22:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57922" started-at="2019-01-31T06:46:47Z" finished-at="2019-01-31T06:47:45Z">
-      <class name="qa.TestCases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.TestCases.HomePageTest@cc285f4]" name="setUp" is-config="true" duration-ms="27767" started-at="2019-01-31T12:16:47Z" finished-at="2019-01-31T12:17:15Z">
+    <test name="Default test" duration-ms="57480" started-at="2019-02-01T11:21:30Z" finished-at="2019-02-01T11:22:27Z">
+      <class name="qa.TestCases.CouponsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.TestCases.CouponsPageTest@8bd1b6a]" name="setUp" is-config="true" duration-ms="28586" started-at="2019-02-01T16:51:30Z" finished-at="2019-02-01T16:51:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickOnRestaurants()[pri:1, instance:qa.TestCases.HomePageTest@cc285f4]" name="clickOnRestaurants" duration-ms="4795" started-at="2019-01-31T12:17:15Z" finished-at="2019-01-31T12:17:20Z">
+        <test-method status="PASS" signature="clickOnAddRecord(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:qa.TestCases.CouponsPageTest@8bd1b6a]" name="clickOnAddRecord" duration-ms="27433" started-at="2019-02-01T16:51:59Z" data-provider="getOnlineFood" finished-at="2019-02-01T16:52:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[k2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[special coupon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[31-Jan-2019]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[28-Feb-2019]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2000.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnRestaurants -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:qa.TestCases.HomePageTest@cc285f4]" name="tearDown" is-config="true" duration-ms="727" started-at="2019-01-31T12:17:20Z" finished-at="2019-01-31T12:17:20Z">
+        </test-method> <!-- clickOnAddRecord -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:qa.TestCases.CouponsPageTest@8bd1b6a]" name="tearDown" is-config="true" duration-ms="677" started-at="2019-02-01T16:52:26Z" finished-at="2019-02-01T16:52:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:qa.TestCases.HomePageTest@cc285f4]" name="setUp" is-config="true" duration-ms="19764" started-at="2019-01-31T12:17:20Z" finished-at="2019-01-31T12:17:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickOnCouponCode1()[pri:2, instance:qa.TestCases.HomePageTest@cc285f4]" name="clickOnCouponCode1" duration-ms="4119" started-at="2019-01-31T12:17:40Z" finished-at="2019-01-31T12:17:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- clickOnCouponCode1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:qa.TestCases.HomePageTest@cc285f4]" name="tearDown" is-config="true" duration-ms="691" started-at="2019-01-31T12:17:44Z" finished-at="2019-01-31T12:17:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- qa.TestCases.HomePageTest -->
+      </class> <!-- qa.TestCases.CouponsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

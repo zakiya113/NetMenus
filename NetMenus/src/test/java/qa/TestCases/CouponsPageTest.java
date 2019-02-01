@@ -45,9 +45,9 @@ public class CouponsPageTest extends TestBase{
 	
 	@Test(priority=1 ,dataProvider="getOnlineFood")
 	
-	public void createNewCoupon(String cCode, String cDesc, String stDate, String etDate, String cDis, String cTAmnt, String cNoImp) throws InterruptedException{ 
-		homePage.clickOnCouponCode1();
-	couponsPage.createNewCoupon(cCode, cDesc, stDate, etDate, cDis, cTAmnt, cNoImp); 
+	public void clickOnAddRecord(String cCode, String cDesc, String stDate, String etDate, String cDis, String cTAmnt, String cNoImp) throws InterruptedException{ 
+	homePage.clickOnCouponCode();
+	couponsPage.clickOnAddRecord(cCode, cDesc, stDate, etDate, cDis, cTAmnt, cNoImp); 
 	} 
 	
 

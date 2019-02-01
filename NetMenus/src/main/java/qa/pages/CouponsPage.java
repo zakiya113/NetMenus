@@ -2,6 +2,7 @@ package qa.pages;
 
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,11 +11,6 @@ import qa.base.TestBase;
 
 public class CouponsPage extends TestBase {
 
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]")
-	WebElement coupon;
-	 
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]")
-	WebElement addrecord;
 	
 		
 	@FindBy(id="ccCode")
@@ -32,7 +28,7 @@ public class CouponsPage extends TestBase {
 	@FindBy(id="ccDiscount")
 	WebElement discount;
 	
-	@FindBy(id="ccThresholdAmount")
+	@FindBy(xpath="//input[@name='ccThreshouldAmount']")
 	WebElement thresholdamount;
 
 	@FindBy(id="ccNumberOfImpression")
@@ -47,28 +43,36 @@ public class CouponsPage extends TestBase {
 				}
 	
 		
-		public void createNewCoupon(String cCode, String cDesc, String stDate, String etDate, String cDis, String cTAmnt, String cNoImp) throws InterruptedException{
+		public void clickOnAddRecord(String cCode, String cDesc, String stDate, String etDate, String cDis, String cTAmnt, String cNoImp) throws InterruptedException{
+			
 			
 			Thread.sleep(3000);
-				
+
+			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]")).click();
+			Thread.sleep(3000);
+			
+			
 			couponcode.sendKeys(cCode);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			description.sendKeys(cDesc);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			startdate.sendKeys(stDate);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			enddate.sendKeys(etDate);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			discount.sendKeys(cDis);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			thresholdamount.sendKeys(cTAmnt);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			numberofimpression.sendKeys(cNoImp);
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			saveBtn.click();
 			
 			
 			}
+
+
+		
 			
 			
 			
