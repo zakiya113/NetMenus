@@ -15,8 +15,17 @@ public class HomePage extends TestBase {
 	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/a[1]")
 	WebElement couponcode;
 	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[1]/a[1]")
-	WebElement addrecord;
+	@FindBy(xpath="/html[1]/body[1]/div[1]/div[2]/div[1]/ul[1]/li[9]/a[1]")
+	WebElement users;
+	
+	@FindBy(xpath="//a[contains(text(),'Owners')]")
+	WebElement owners;
+	
+	@FindBy(xpath="//a[contains(text(),'Restaurant Plans')]")
+	WebElement restaurantplans;
+
+	@FindBy(xpath="//a[contains(text(),'Drivers')]")
+	WebElement drivers;
 	
 	//Initializing the Page Objects
 		public HomePage() {
@@ -33,12 +42,24 @@ public class HomePage extends TestBase {
 	return new CouponsPage();
 	}
 	
-	/*public RestaurantPage clickOnAddRecord() throws InterruptedException{
-		Thread.sleep(3000);
-		addrecord.click();
-	
-	}*/
+	public UsersPage clickOnUsers() {
+		users.click();
+	return new UsersPage();
+	}
 
+	public OwnersPage clickOnOwners() {
+		owners.click();
+	return new OwnersPage();
+	}
 	
+	public RestaurantPlansPage clickOnRestaurantPlans() {
+		restaurantplans.click();
+	return new RestaurantPlansPage();
+	}
+	
+	public DriversPage clickOnDrivers() {
+		drivers.click();
+	return new DriversPage();
+	}
 	
 }
